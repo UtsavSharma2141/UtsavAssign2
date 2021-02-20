@@ -1,4 +1,38 @@
 <!--Utsav Sharma N01392141 Section C-->
 <resources>
     <string name="app_name">Utsav Sharma N01392141</string>
+
+    <string name="dominos">Dominos</string>
+    <string name="piza_pizza">Piza Pizza</string>
+    <string name="pizahut">PizaHut</string>
+
+    <string name="nextButton">Next</string>
+
+    <string name="toast_One">Please select atleast one</string>
+
+    <string name="pizzaTypeTag">Pizza Type</string>
+    <string name="pizzaType1">Cheese Pizza</string>
+    <string name="pizzaType2">Veggie Pizza</string>
+    <string name="pizzaType3">Pepperoni Pizza</string>
+    <string name="pizzaType4">Supreme Pizza</string>
+    <string name="pizzaType5">Meat Pizza</string>
+
+    <string name="pizzaSizeTag">Pizza Size</string>
+
+    <string name="pizzaSize1">Small</string>
+    <string name="pizzaSize2">Medium</string>
+    <string name="pizzaSize3">Large</string>
+    <string name="pizzaSize4">Extra Large</string>
+
+    <string name="pizzaToppingTag">Pizza Topping</string>
+
+    <string name="toppingsTag">Toppings</string>
+    <string name="topping1">Pineapple</string>
+    <string name="topping2">Mushroom</string>
+    <string name="topping3">Onions</string>
+    <string name="topping4">Green Olives</string>
+    <string name="topping5">Spinach</string>
+
+
+    <string name="selectionToast">Please Select from the following</string>
 </resources>
