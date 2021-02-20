@@ -23,9 +23,9 @@
             app:cardCornerRadius="10dp"
             android:layout_marginBottom="30dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/utsavDomino"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="10dp"
                 android:background="#eeeeee">
@@ -33,17 +33,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="@string/dominos"
                     android:textSize="40sp"
                     android:fontFamily="@font/varela_round"
-                    android:layout_centerVertical="true"/>
+                    android:layout_gravity="center_vertical"/>
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/dominos"
-                    android:layout_alignParentEnd="true"
                     />
-            </RelativeLayout>
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -54,9 +54,9 @@
             app:cardCornerRadius="10dp"
             >
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/utsavPiza"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="10dp"
                 android:background="#eeeeee">
@@ -64,17 +64,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="@string/piza_pizza"
                     android:textSize="40sp"
                     android:fontFamily="@font/varela_round"
-                    android:layout_centerVertical="true"/>
+                    android:layout_gravity="center_vertical"/>
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/piza"
                     android:layout_alignParentEnd="true"
                     />
-            </RelativeLayout>
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -86,9 +87,9 @@
             app:cardCornerRadius="10dp"
             >
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/utsavPizahut"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="10dp"
                 android:background="#eeeeee">
@@ -96,17 +97,17 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="@string/pizahut"
                     android:textSize="40sp"
                     android:fontFamily="@font/varela_round"
-                    android:layout_centerVertical="true"/>
+                    android:layout_gravity="center_vertical"/>
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/pizahut"
-                    android:layout_alignParentEnd="true"
                     />
-            </RelativeLayout>
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 

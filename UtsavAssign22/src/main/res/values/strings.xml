@@ -35,4 +35,15 @@
 
 
     <string name="selectionToast">Please Select from the following</string>
+    <string name="orderscreen">Order Screen</string>
+    <string name="help_menu">Help</string>
+    <string name="help_pizza">Pizza</string>
+    <string name="menu3">Utsav Sharma. I like this app.</string>
+    <string name="pizza_websitename">Pizza\'s website</string>
+
+
+
+    <string name="nameHint">Enter Name</string>
+    <string name="creditHint">Enter Credit Info</string>
+    <string name="addHint">Enter Address</string>
 </resources>
