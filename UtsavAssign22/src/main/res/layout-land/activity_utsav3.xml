@@ -7,33 +7,69 @@
     android:layout_height="match_parent"
     tools:context=".SharmaActivity3"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="0dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <TableLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="#e3e3e3">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#000"
+                        android:layout_weight="1"
+                        android:text="@string/pizzaTypeTag"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/utsavPizaType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp"
+                        />
+
+
+                </TableRow>
+
+            </TableLayout>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginBottom="10dp"
-                    android:textColor="#000"
                     android:layout_weight="1"
-                    android:text="@string/pizzaTypeTag"
+                    android:text="@string/pizzaSizeTag"
+                    android:textColor="#000"
                     android:textSize="20sp"
                     />
 
                 <TextView
-                    android:id="@+id/utsavPizaType"
+                    android:id="@+id/utsavSizeType"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
@@ -43,87 +79,107 @@
 
             </TableRow>
 
-        </TableLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <TableRow
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/pizzaToppingTag"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/utsavToppType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp"
+                        />
+
+                </LinearLayout>
+
+
+            </TableRow>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="10dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="1"
-                android:text="@string/pizzaSizeTag"
-                android:textColor="#000"
-                android:textSize="20sp"
-                />
-
-            <TextView
-                android:id="@+id/utsavSizeType"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:textSize="20sp"
-                />
-
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <LinearLayout
+            <EditText
+                android:id="@+id/utsavEdtName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/pizzaToppingTag"
-                    android:textColor="#000"
-                    android:layout_gravity="center"
-                    android:textSize="20sp"
-                    />
-
-                <TextView
-                    android:id="@+id/utsavToppType"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:textSize="20sp"
-                    />
-
-            </LinearLayout>
+                android:hint="@string/nameHint"/>
 
 
-        </TableRow>
+            <EditText
+                android:id="@+id/utsavEdtCreditCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/creditHint"/>
+
+
+            <EditText
+                android:id="@+id/utsavEdtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/addHint"/>
+
+
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/utsavEdtName"
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/provinceTag"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/nameHint"/>
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Spinner
+            android:id="@+id/utsavProvinceSpin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
 
 
-    <EditText
-        android:id="@+id/utsavEdtCreditCard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/creditHint"/>
+        <Button
+            android:id="@+id/utsavOrderBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/orderTag"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentEnd="true"
+            />
 
 
-    <EditText
-        android:id="@+id/utsavEdtAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/addHint"/>
-
+    </RelativeLayout>
 
 
 

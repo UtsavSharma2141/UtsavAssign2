@@ -42,8 +42,30 @@
     <string name="pizza_websitename">Pizza\'s website</string>
 
 
-
     <string name="nameHint">Enter Name</string>
     <string name="creditHint">Enter Credit Info</string>
     <string name="addHint">Enter Address</string>
+
+    <string name="provinceTag">Province</string>
+    <string-array name="province">
+        <item>ON</item>
+        <item>QC</item>
+        <item>NS</item>
+        <item>NB</item>
+        <item>MB</item>
+        <item>BC</item>
+        <item>PE</item>
+        <item>SK</item>
+        <item>AB</item>
+        <item>NL</item>
+    </string-array>
+
+    <string name="orderTag">Order</string>
+
+    <string name="toast3">Please Fill all the details</string>
+
+    <string name="nameTag">Name</string>
+    <string name="addTag">Address</string>
+    <string name="creditTag">Credit Card</string>
+    <string name="checkOutBtnTag">Check out</string>
 </resources>

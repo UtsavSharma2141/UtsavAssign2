@@ -108,23 +108,44 @@
         android:id="@+id/utsavEdtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/nameHint"/>
+        android:hint="@string/nameHint"
+        android:inputType="text"/>
 
 
     <EditText
         android:id="@+id/utsavEdtCreditCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/creditHint"/>
+        android:hint="@string/creditHint"
+        android:inputType="number"
+        android:maxLength="16"/>
 
 
     <EditText
         android:id="@+id/utsavEdtAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/addHint"/>
+        android:hint="@string/addHint" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/provinceTag"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+    <Spinner
+        android:id="@+id/utsavProvinceSpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
+    <Button
+        android:id="@+id/utsavOrderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/orderTag"
+        android:layout_gravity="center_horizontal"
+        />
 
 
 </LinearLayout>
