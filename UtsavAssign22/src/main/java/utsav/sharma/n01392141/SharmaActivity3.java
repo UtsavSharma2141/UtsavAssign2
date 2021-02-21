@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -16,11 +15,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SharmaActivity3 extends AppCompatActivity {
 
@@ -39,7 +34,11 @@ public class SharmaActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_utsav3);
+        setContentView(R.layout.activity_sharma3);
+
+
+        getSupportActionBar().setTitle("Order");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         pizaTypeTxt = findViewById(R.id.utsavPizaType);
         pizaSizeTxt = findViewById(R.id.utsavSizeType);

@@ -18,6 +18,10 @@ public class SharmaActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sharma4);
 
+
+        getSupportActionBar().setTitle("Conformation");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         typetxt = findViewById(R.id.utsavPType);
         sizetxt = findViewById(R.id.utsavPSize);
         topptxt = findViewById(R.id.utsavPTopp);
