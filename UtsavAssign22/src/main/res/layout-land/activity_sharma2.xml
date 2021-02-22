@@ -3,13 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/cream"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.UtsavAssign2">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".SharmaActivity2"
@@ -28,7 +27,7 @@
             android:layout_marginTop="30dp"
             android:text="@string/pizzaTypeTag"
             android:textSize="30sp"
-            android:textColor="#000000"/>
+            />
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -84,7 +83,7 @@
             android:layout_marginTop="30dp"
             android:text="@string/pizzaSizeTag"
             android:textSize="30sp"
-            android:textColor="#000000"/>
+            />
 
         <HorizontalScrollView
             android:layout_width="match_parent"
@@ -132,7 +131,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="@string/toppingsTag"
-            android:textColor="#000"
             android:textSize="30sp"/>
 
         <HorizontalScrollView

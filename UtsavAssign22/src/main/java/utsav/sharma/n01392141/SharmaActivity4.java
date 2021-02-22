@@ -3,10 +3,13 @@ package utsav.sharma.n01392141;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SharmaActivity4 extends AppCompatActivity {
 
@@ -46,8 +49,25 @@ public class SharmaActivity4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(SharmaActivity4.this);
+                builder.setTitle("Title");
+                builder.setMessage(R.string.toastMsg);
+                builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(SharmaActivity4.this, getResources().getString(R.string.endToast),Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setNegativeButton("Dismiss", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        //Toast.makeText(SharmaActivity4.this, "Please choose your order again..",Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(SharmaActivity4.this,UtsavActivity.class));
+                    }
+                });
+                builder.show();
             }
         });
 
     }
+
 }

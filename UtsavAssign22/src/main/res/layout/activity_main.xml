@@ -8,7 +8,8 @@
     tools:context=".UtsavActivity"
     android:background="@color/cream"
     android:padding="10dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:theme="@style/Theme.UtsavAssign2">
 
 
     <LinearLayout
@@ -36,7 +37,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/dominos"
-                    android:textColor="#0C090A"
                     android:textSize="40sp"
                     android:fontFamily="@font/varela_round"
                     android:layout_gravity="center_vertical"/>
@@ -68,7 +68,6 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/piza_pizza"
-                    android:textColor="#0C090A"
                     android:textSize="40sp"
                     android:fontFamily="@font/varela_round"
                     android:layout_gravity="center_vertical"/>
@@ -94,18 +93,17 @@
                 android:id="@+id/utsavPizahut"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="10dp"
-                android:background="#eeeeee">
+                android:background="#eeeeee"
+                android:padding="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/pizahut"
-                    android:textColor="#0C090A"
-                    android:textSize="40sp"
+                    android:layout_gravity="center_vertical"
                     android:fontFamily="@font/varela_round"
-                    android:layout_gravity="center_vertical"/>
+                    android:text="@string/pizahut"
+                    android:textSize="40sp" />
+
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"

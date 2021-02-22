@@ -68,4 +68,8 @@
     <string name="addTag">Address</string>
     <string name="creditTag">Credit Card</string>
     <string name="checkOutBtnTag">Check out</string>
+
+    <string name="endToast">Thank You for your order. We are preparing your order.</string>
+
+    <string name="toastMsg">Your confirmation number is 12569 and your pickup time is 7 PM.</string>
 </resources>

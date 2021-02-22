@@ -193,6 +193,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/checkOutBtnTag"
-        android:layout_gravity="center_horizontal"
-        tools:ignore="OnClick" />
+        android:layout_gravity="center_horizontal"/>
 </LinearLayout>
