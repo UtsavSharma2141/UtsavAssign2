@@ -1,3 +1,4 @@
+/* Utsav Sharma, N01392141 Section C */
 package utsav.sharma.n01392141;
 
 import androidx.appcompat.app.AlertDialog;
@@ -20,7 +21,6 @@ public class SharmaActivity4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sharma4);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
 
         getSupportActionBar().setTitle(R.string.title_conform);
