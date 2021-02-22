@@ -45,20 +45,20 @@ public class UtsavActivity extends AppCompatActivity {
         dominoLt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SelectPizza("dominos");
+                SelectPizza(getString(R.string.pizza_name1));
             }
 
         });
         pizaLt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SelectPizza("piza");
+                SelectPizza(getString(R.string.pizza_name2));
             }
         });
         pizahutLt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SelectPizza("pizaHut");
+                SelectPizza(getString(R.string.pizza_name3));
             }
         });
 
@@ -68,9 +68,9 @@ public class UtsavActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(pizzaSelected){
                     Intent i = new Intent(UtsavActivity.this,SharmaActivity2.class);
-                    i.putExtra("pizzaNm",seectedPizza);
+                    i.putExtra(getString(R.string.pzzanmextra),seectedPizza);
                     //Toast.makeText(UtsavActivity.this, seectedPizza, Toast.LENGTH_SHORT).show();
-                    i.putExtra("imgId",imgId);
+                    i.putExtra(getString(R.string.imgid),imgId);
                     startActivity(i);
 
                 }else {
@@ -92,9 +92,11 @@ public class UtsavActivity extends AppCompatActivity {
         switch (item.getItemId())
         {
             case R.id.utsavMenu:
-                Toast.makeText(this, "Help website", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,
+                        R.string.pizza_website,
+                        Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://food.ndtv.com/food-drinks/an-ultimate-guide-on-how-to-order-a-pizza-1905628"));
+                        Uri.parse(getString(R.string.website1)));
                 startActivity(intent);
                 break;
 
@@ -103,7 +105,7 @@ public class UtsavActivity extends AppCompatActivity {
                         R.string.pizza_websitename,
                         Toast.LENGTH_SHORT).show();
                 Intent intent2 = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://www.dominos.ca/en/"));
+                        Uri.parse(getString(R.string.website2)));
                 startActivity(intent2);
                 break;
 
@@ -123,7 +125,7 @@ public class UtsavActivity extends AppCompatActivity {
                 dominoLt.setBackgroundColor(0xff00B8D4);
                 pizaLt.setBackgroundColor(0xffeeeeee);
                 pizahutLt.setBackgroundColor(0xffeeeeee);
-                seectedPizza = "Dominos";
+                seectedPizza = getString(R.string.case_pizza_name1);
                 imgId  = R.drawable.dominos;
                 break;
 
@@ -131,7 +133,7 @@ public class UtsavActivity extends AppCompatActivity {
                 pizaLt.setBackgroundColor(0xff00B8D4);
                 dominoLt.setBackgroundColor(0xffeeeeee);
                 pizahutLt.setBackgroundColor(0xffeeeeee);
-                seectedPizza = "Piza Pizza";
+                seectedPizza = getString(R.string.case_pizza_name2);
                 imgId  = R.drawable.piza;
                 break;
 
@@ -139,7 +141,7 @@ public class UtsavActivity extends AppCompatActivity {
                 pizahutLt.setBackgroundColor(0xff00B8D4);
                 dominoLt.setBackgroundColor(0xffeeeeee);
                 pizaLt.setBackgroundColor(0xffeeeeee);
-                seectedPizza = "PizzaHut";
+                seectedPizza = getString(R.string.case_pizza_name3);
                 imgId  = R.drawable.pizahut;
                 break;
         }

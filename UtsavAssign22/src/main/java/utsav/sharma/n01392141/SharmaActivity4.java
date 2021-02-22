@@ -20,10 +20,10 @@ public class SharmaActivity4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sharma4);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
 
-        getSupportActionBar().setTitle("Conformation");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(R.string.title_conform);
 
         typetxt = findViewById(R.id.utsavPType);
         sizetxt = findViewById(R.id.utsavPSize);
@@ -35,32 +35,33 @@ public class SharmaActivity4 extends AppCompatActivity {
         provincetxt = findViewById(R.id.utsavUProvince);
 
 
-        typetxt.setText(getIntent().getStringExtra("type"));
-        sizetxt.setText(getIntent().getStringExtra("size"));
-        topptxt.setText(getIntent().getStringExtra("topp"));
+        typetxt.setText(getIntent().getStringExtra(getString(R.string.type_act2)));
+        sizetxt.setText(getIntent().getStringExtra(getString(R.string.size_act2)));
+        topptxt.setText(getIntent().getStringExtra(getString(R.string.topp_act2)));
 
-        nametxt.setText(getIntent().getStringExtra("uname"));
-        addtxt.setText(getIntent().getStringExtra("uaddr"));
-        creditxt.setText(getIntent().getStringExtra("ucredit"));
-        provincetxt.setText(getIntent().getStringExtra("uprov"));
+        nametxt.setText(getIntent().getStringExtra(getString(R.string.uname_act2)));
+        addtxt.setText(getIntent().getStringExtra(getString(R.string.uaddr_act2)));
+        creditxt.setText(getIntent().getStringExtra(getString(R.string.ucredit_act2)));
+        provincetxt.setText(getIntent().getStringExtra(getString(R.string.uprove_act2)));
+
 
         checkBtn = findViewById(R.id.utsavCheckTBtn);
+
         checkBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(SharmaActivity4.this);
-                builder.setTitle("Title");
+                builder.setTitle(R.string.screen4_title);
                 builder.setMessage(R.string.toastMsg);
-                builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+                builder.setPositiveButton(R.string.name_confirm_last, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(SharmaActivity4.this, getResources().getString(R.string.endToast),Toast.LENGTH_SHORT).show();
                     }
                 });
-                builder.setNegativeButton("Dismiss", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(R.string.name_dismiss, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        //Toast.makeText(SharmaActivity4.this, "Please choose your order again..",Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(SharmaActivity4.this,UtsavActivity.class));
                     }
                 });

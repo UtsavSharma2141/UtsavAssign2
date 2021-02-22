@@ -34,7 +34,7 @@
     <string name="topping5">Spinach</string>
 
 
-    <string name="selectionToast">Please Select from the following</string>
+    <string name="selectionToast">Please Select from the Pizza Type or Size or at least one Toppings</string>
     <string name="orderscreen">Order Screen</string>
     <string name="help_menu">Help</string>
     <string name="help_pizza">Pizza</string>
@@ -62,7 +62,7 @@
 
     <string name="orderTag">Order</string>
 
-    <string name="toast3">Please Fill all the details</string>
+    <string name="toast3">Please Fill the all details above correctly</string>
 
     <string name="nameTag">Name</string>
     <string name="addTag">Address</string>
@@ -72,4 +72,44 @@
     <string name="endToast">Thank You for your order. We are preparing your order.</string>
 
     <string name="toastMsg">Your confirmation number is 12569 and your pickup time is 7 PM.</string>
+    <string name="pizza_website">Help website</string>
+    <string name="pizza_name1">dominos</string>
+    <string name="pizza_name2">piza</string>
+    <string name="pizza_name3">pizaHut</string>
+    <string name="pzzanmextra">pizzaNm</string>
+    <string name="imgid">imgId</string>
+    <string name="case_pizza_name1">Dominos</string>
+    <string name="case_pizza_name2">Piza Pizza</string>
+    <string name="case_pizza_name3">PizzaHut</string>
+    <string name="title_conform">Confirmation</string>
+    <string name="name_dismiss">Dismiss</string>
+    <string name="name_confirm_last">Confirm</string>
+    <string name="screen4_title">Title</string>
+    <string name="type_act2">type</string>
+    <string name="size_act2">size</string>
+    <string name="topp_act2">topp</string>
+    <string name="uname_act2">uname</string>
+    <string name="uaddr_act2">uaddr</string>
+    <string name="ucredit_act2">ucredit</string>
+    <string name="uprove_act2">uprov</string>
+    <string name="order_act3">Order</string>
+    <string name="type_act3">pizaType</string>
+    <string name="size_act3">pizaSize</string>
+    <string name="topp_act3">toppArr</string>
+    <string name="nameedt_act3">Enter details</string>
+    <string name="namedit2_act3">Enter details</string>
+    <string name="nameedit3_act3">Enter details</string>
+    <string name="ptype_act3">type</string>
+    <string name="psize_act3">size</string>
+    <string name="ptopp_act3">topp</string>
+    <string name="uname_act3">uname</string>
+    <string name="ucredit_act3">ucredit</string>
+    <string name="uaddr_act3">uaddr</string>
+    <string name="uprov_act3">uprov</string>
+    <string name="pizzanm1_activity2">pizzaNm</string>
+    <string name="pizzatype_activity2">pizaType</string>
+    <string name="pizzasize_activity2">pizaSize</string>
+    <string name="toppings1_activity2">toppArr</string>
+    <string name="website1">https://food.ndtv.com/food-drinks/an-ultimate-guide-on-how-to-order-a-pizza-1905628</string>
+    <string name="website2">https://www.dominos.ca/en/</string>
 </resources>

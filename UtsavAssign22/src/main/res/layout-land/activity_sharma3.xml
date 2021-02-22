@@ -130,7 +130,9 @@
                 android:id="@+id/utsavEdtCreditCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/creditHint"/>
+                android:hint="@string/creditHint"
+                android:inputType="number"
+                android:maxLength="16"/>
 
 
             <EditText

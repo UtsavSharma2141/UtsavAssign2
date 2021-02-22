@@ -38,7 +38,7 @@ public class SharmaActivity2 extends AppCompatActivity {
 
         pizaImg = findViewById(R.id.utsavImg);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        String heading = getIntent().getStringExtra("pizzaNm");
+        String heading = getIntent().getStringExtra(getString(R.string.pizzanm1_activity2));
         getSupportActionBar().setTitle(heading);
         pizaImg.setImageDrawable(getResources().getDrawable(getIntent().getIntExtra("imgId",R.drawable.dominos)));
 
@@ -95,13 +95,10 @@ public class SharmaActivity2 extends AppCompatActivity {
                 String msg  = getResources().getString(R.string.selectionToast);
                 Toast.makeText(SharmaActivity2.this, msg, Toast.LENGTH_SHORT).show();
             }else{
-                Log.d("qwerty", pizaSize + pizzaType);
-                Log.d("qwerty", toppingsArr.toString());
-
                 Intent ii = new Intent(SharmaActivity2.this,SharmaActivity3.class);
-                ii.putExtra("pizaType",pizzaType);
-                ii.putExtra("pizaSize",pizaSize);
-                ii.putStringArrayListExtra("toppArr",toppingsArr);
+                ii.putExtra(getString(R.string.pizzatype_activity2),pizzaType);
+                ii.putExtra(getString(R.string.pizzasize_activity2),pizaSize);
+                ii.putStringArrayListExtra(getString(R.string.toppings1_activity2),toppingsArr);
 
                 startActivity(ii);
             }

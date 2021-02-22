@@ -37,8 +37,8 @@ public class SharmaActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_sharma3);
 
 
-        getSupportActionBar().setTitle("Order");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(R.string.order_act3);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         pizaTypeTxt = findViewById(R.id.utsavPizaType);
         pizaSizeTxt = findViewById(R.id.utsavSizeType);
@@ -48,11 +48,11 @@ public class SharmaActivity3 extends AppCompatActivity {
         creditEdt = findViewById(R.id.utsavEdtCreditCard);
         addEdt = findViewById(R.id.utsavEdtAddress);
 
-        pizaType = getIntent().getStringExtra("pizaType");
-        pizaSize = getIntent().getStringExtra("pizaSize");
+        pizaType = getIntent().getStringExtra(getString(R.string.type_act3));
+        pizaSize = getIntent().getStringExtra(getString(R.string.size_act3));
 
         toppArr = new ArrayList<>();
-        toppArr = getIntent().getStringArrayListExtra("toppArr");
+        toppArr = getIntent().getStringArrayListExtra(getString(R.string.topp_act3));
 
         pizaTypeTxt.setText(pizaType);
         pizaSizeTxt.setText(pizaSize);
@@ -72,7 +72,7 @@ public class SharmaActivity3 extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
                 if(s.length() <= 0){
-                    nameEdt.setError("Enter details");
+                    nameEdt.setError(getString(R.string.nameedt_act3));
                 }
             }
         });
@@ -91,7 +91,7 @@ public class SharmaActivity3 extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
                 if(s.length() <= 0){
-                     creditEdt.setError("Enter details");
+                     creditEdt.setError(getString(R.string.namedit2_act3));
                 }
             }
         });
@@ -110,7 +110,7 @@ public class SharmaActivity3 extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
                 if(s.length() <= 0){
-                    addEdt.setError("Enter details");
+                    addEdt.setError(getString(R.string.nameedit3_act3));
                 }
             }
         });
@@ -149,14 +149,14 @@ public class SharmaActivity3 extends AppCompatActivity {
 
                    // Toast.makeText(SharmaActivity3.this, msg, Toast.LENGTH_SHORT).show();
                     Intent ii = new Intent(SharmaActivity3.this,SharmaActivity4.class);
-                    ii.putExtra("type",pizaTypeTxt.getText().toString());
-                    ii.putExtra("size",pizaSizeTxt.getText().toString());
-                    ii.putExtra("topp",pizaToppTxt.getText().toString());
+                    ii.putExtra(getString(R.string.ptype_act3),pizaTypeTxt.getText().toString());
+                    ii.putExtra(getString(R.string.psize_act3),pizaSizeTxt.getText().toString());
+                    ii.putExtra(getString(R.string.ptopp_act3),pizaToppTxt.getText().toString());
 
-                    ii.putExtra("uname",name);
-                    ii.putExtra("ucredit",creditNo);
-                    ii.putExtra("uaddr",addr);
-                    ii.putExtra("uprov",province);
+                    ii.putExtra(getString(R.string.uname_act3),name);
+                    ii.putExtra(getString(R.string.ucredit_act3),creditNo);
+                    ii.putExtra(getString(R.string.uaddr_act3),addr);
+                    ii.putExtra(getString(R.string.uprov_act3),province);
                     startActivity(ii);
 
                 }
