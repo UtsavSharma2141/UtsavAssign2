@@ -1,7 +1,6 @@
 <!--Utsav Sharma N01392141 Section C-->
 <resources>
     <string name="app_name">Utsav Sharma N01392141</string>
-    <color name="cream">#FFFFCC</color>
     <string name="dominos">Dominos</string>
     <string name="piza_pizza">Piza Pizza</string>
     <string name="pizahut">PizaHut</string>

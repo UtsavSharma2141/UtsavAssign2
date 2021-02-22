@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:orientation="vertical"
-                android:background="#eeeeee">
+                android:background="@color/back_colour">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:orientation="vertical"
-                android:background="#eeeeee">
+                android:background="@color/back_colour">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="10dp"
-                android:background="#eeeeee">
+                android:background="@color/back_colour">
 
                 <TextView
                     android:layout_width="wrap_content"
