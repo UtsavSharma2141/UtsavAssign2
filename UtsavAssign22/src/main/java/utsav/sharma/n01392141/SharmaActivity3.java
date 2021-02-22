@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -54,10 +55,9 @@ public class SharmaActivity3 extends AppCompatActivity {
 
         toppArr = new ArrayList<>();
         toppArr = getIntent().getStringArrayListExtra(getString(R.string.topp_act3));
-
         pizaTypeTxt.setText(pizaType);
         pizaSizeTxt.setText(pizaSize);
-        pizaToppTxt.setText(toppArr.toString());
+        pizaToppTxt.setText(toppArr.toString().replace("]","").replace("[",""));
 
         nameEdt.addTextChangedListener(new TextWatcher() {
             @Override

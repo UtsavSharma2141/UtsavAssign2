@@ -62,7 +62,9 @@ public class SharmaActivity4 extends AppCompatActivity {
                 builder.setNegativeButton(R.string.name_dismiss, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+
                         startActivity(new Intent(SharmaActivity4.this,UtsavActivity.class));
+                        finish();
                     }
                 });
                 builder.show();
@@ -70,5 +72,6 @@ public class SharmaActivity4 extends AppCompatActivity {
         });
 
     }
+
 
 }

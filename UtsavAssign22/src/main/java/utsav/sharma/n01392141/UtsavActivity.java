@@ -2,8 +2,10 @@
 package utsav.sharma.n01392141;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
@@ -79,6 +81,30 @@ public class UtsavActivity extends AppCompatActivity {
                 }
             }
         });
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false);
+        builder.setMessage(R.string.exit_dialouge);
+        builder.setPositiveButton(R.string.exit_yes, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finishAffinity();
+                System.exit(0);
+            }
+        });
+        builder.setNegativeButton(R.string.exit_no, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
     }
 
     @Override

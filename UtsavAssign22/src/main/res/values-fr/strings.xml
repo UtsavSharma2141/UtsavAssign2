@@ -111,4 +111,7 @@
     <string name="toppings1_activity2">toppArr</string>
     <string name="website1">https://food.ndtv.com/food-drinks/an-ultimate-guide-on-how-to-order-a-pizza-1905628</string>
     <string name="website2">https://www.dominos.ca/en/</string>
+    <string name="exit_dialouge">Voulez-vous quitter lapplication?</string>
+    <string name="exit_yes">Oui</string>
+    <string name="exit_no">Non</string>
 </resources>
